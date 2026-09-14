@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import(
 )
 
 from LAYOUTS.cinta_opciones.cinta import CINTA
+from WIDGETS.GLCanvas import Canvas
 
 class MAINLAYOUT(QVBoxLayout): 
     def __init__(self):
@@ -10,6 +11,7 @@ class MAINLAYOUT(QVBoxLayout):
         
         
         self.cinta = CINTA()
-        
+        self.canva = Canvas()
         self.addWidget(self.cinta)
+        self.addWidget(self.canva)
         
