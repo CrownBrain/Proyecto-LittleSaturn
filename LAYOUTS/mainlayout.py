@@ -13,5 +13,5 @@ class MAINLAYOUT(QVBoxLayout):
         self.cinta = CINTA()
         self.canva = Canvas()
         self.addWidget(self.cinta)
-        self.addWidget(self.canva)
+        self.addWidget(self.canva, stretch=1)
         
