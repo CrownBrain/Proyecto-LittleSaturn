@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="11.274999mm"
+   height="10.993125mm"
+   viewBox="0 0 11.274999 10.993125"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="rect1.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="14.482912"
+     inkscape:cx="18.055761"
+     inkscape:cy="17.986714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     style="fill:#ff5555;stroke:#eeeeee;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none"
+     d="M 11.073789,0.21947996 7.3949549,3.8181489"
+     id="path2"
+     sodipodi:nodetypes="cc" />
+  <g
+     id="layer1"
+     transform="translate(-83.869776,-90.848478)">
+    <path
+       d="m 58.918053,95.914682 0.151727,-0.90136 -0.38006,-0.476457 c 1.38e-4,-0.906604 -0.321704,-1.469609 -0.947557,-1.879923 m -2.091772,-1.176328 c -0.385138,-0.365419 -0.464837,-0.7137 -0.464837,-1.656706 0,-1.51623 -0.979134,-1.341923 -0.588339,-1.722338 2.000812,-1.947665 2.040771,-4.639832 2.093632,-4.639832 0.05286,0 0.09282,2.692167 2.093632,4.639832 0.390795,0.380415 -0.588339,0.206108 -0.588339,1.722338 0,1.516231 -0.439812,2.296453 -1.482573,2.306603 -1.314752,0.01016 -1.959248,1.08305 -1.959047,2.406354 l -0.38006,0.478524 0.228269,1.40553"
+       style="fill:none;fill-rule:nonzero;stroke:#eeeeee;stroke-width:0.586144;stroke-linecap:round"
+       id="path21"
+       transform="rotate(45,66.501806,133.36624)"
+       sodipodi:nodetypes="cccccscssscccc" />
+  </g>
+  <circle
+     style="fill:#eeeeee;stroke-width:2.552;stroke-linecap:round"
+     id="path1"
+     cx="7.2122684"
+     cy="3.9825668"
+     r="0.529791" />
+</svg>
