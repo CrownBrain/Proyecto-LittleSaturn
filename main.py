@@ -3,21 +3,37 @@ import os
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QIcon
 from CONFIG_SYS.wayland_desktop import Existe_desktop
+from PyQt5.QtCore import Qt
+from LAYOUTS.toolbox import TOOLBOX
 
 
+Autor = "GAMO"
+Proyecto = "LittleSaturn"
 version = "LittleSaturn 0.0"
+
 
 class MAINWINDOW(QMainWindow):
     def __init__(self):
         super().__init__()
         
-        self.setWindowTitle(f"{version} creacion de ventana")
-        
+        self.setWindowTitle(f"{Proyecto}{version} creacion de ventana")
+
+        self.setWindowFlags(Qt.Window)
         self.setMinimumSize(800, 600)
         self.setObjectName("MAIN")
+        
+        self.ventana_herramientas = TOOLBOX(self)
+        self.ventana_herramientas.show()
 
 
 if __name__ == "__main__":
+
+    # icono en windows rapidamente:
+    if sys.platform == "win32":
+        import ctypes
+        AppId = f"{Autor}.{Proyecto}.{version}"
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(AppId)
+
     app = QApplication(sys.argv)
 
 
