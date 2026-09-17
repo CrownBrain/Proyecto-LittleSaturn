@@ -1,13 +1,22 @@
 import sys
+
+# NOTA IMPORTANTE 
+# los imports tienen que hacerse en orden skia, PyQt luego OpenGL porque si no por alguna razon hay errores de acceso de memoria entre ellos y todo muere
+
+import skia
+
 from PyQt5.QtWidgets import (
     QOpenGLWidget,
     QApplication
 )
-from PyQt5.QtOpenGL import QGLFormat
+from PyQt5.QtGui import QSurfaceFormat
 
-
-import skia
 from OpenGL import GL
+
+
+
+
+
 
 class SKANVAS(QOpenGLWidget):
     def __init__(self, parent = None):
@@ -26,9 +35,17 @@ class SKANVAS(QOpenGLWidget):
         
         # PROBLEMA 1: esto por alguna razon sin importar si es windows o linux devuelve None lo que jode todo lo que sigue:
         self.makeCurrent()
+        
         #  GrGLInterface.MakeEGL() deberia funcionar para KDE y tambien para Windows pero para alguna chingadera que use X11 necesitaria usar el otro asi que posteriormente investiga en la aplicacion grande si quieres hacer un if para verificar el sistema operativo mas a dondo
-        interface = skia.GrGLInterface.MakeEGL() # esto deberia arreglar los problemas dehallar el contexto de GL
-        self.grContext = skia.GrDirectContext.MakeGL(interface)
+        """NOTA SUPER IMOPRTANTER
+        POR ALGUNA RAZON WINDOWS SI JALA CON EL CODIGO HABITUAL Y EL USAR EL INTERFACE JODE 
+        TOOD ASI QUE NO JODAS _TODO SIMPLEMENTE HACIENDO UN IF EN LA APLICACION FINAL FINALOSA.
+        """
+        
+        #interface = skia.GrGLInterface.MakeEGL() # esto deberia arreglar los problemas dehallar el contexto de GL
+        
+        #self.grContext = skia.GrDirectContext.MakeGL(interface)
+        self.grContext = skia.GrDirectContext.MakeGL()
 
         print(f'self.grContext creado : {self.grContext}', flush=True)
 
@@ -103,14 +120,17 @@ class SKANVAS(QOpenGLWidget):
         self.superficie.flushAndSubmit()
 
 if __name__ == "__main__":
+    print("Pre-QApplication", flush=True)
     app = QApplication(sys.argv)
-
+    print("post-Qapllication", flush=True)
+    
     # Asegurar el buffer stencil en Qt 
-    fmt  = QGLFormat.defaultFormat()
-    fmt.setStencil(True)
-    QGLFormat.setDefaultFormat(fmt)
+    fmt  = QSurfaceFormat()
+    fmt.setStencilBufferSize(8)
+    QSurfaceFormat.setDefaultFormat(fmt)
 
     widget = SKANVAS()
     widget.resize(800, 600)
     widget.show()
+    print("widget.show", flush=True)
     sys.exit(app.exec_())
