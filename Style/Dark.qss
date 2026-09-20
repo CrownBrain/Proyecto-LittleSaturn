@@ -1,0 +1,25 @@
+@BackgroundWindows : #202329;
+@DARK1 : #34373a;
+@HIGHTLIGHT : #ff9030 ;
+
+
+#MAIN {
+    background-color : @BackgroundWindows; 
+}
+
+QDialog {
+    background-color : @BackgroundWindows;
+}
+
+QPushButton {
+    background-color : @DARK1: 
+}
+
+QPushButton:hover {
+    background-color : @HIGHTLIGHT;
+}
+
+QTabWidget {
+    background-color : @DARK1
+}
+

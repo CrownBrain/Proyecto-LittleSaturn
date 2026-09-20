@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="44.097267mm"
+   height="44.097263mm"
+   viewBox="0 0 44.097267 44.097263"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-102.06085,-24.140742)">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect13"
+       width="44.097263"
+       height="44.097263"
+       x="102.06085"
+       y="24.140739" />
+    <g
+       id="g20"
+       transform="translate(-4.131506,-58.292227)">
+      <rect
+         style="fill:#d5f6ff;fill-opacity:1;stroke:#000000;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4.4, 4.4;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect15"
+         width="32.908752"
+         height="32.908752"
+         x="111.78661"
+         y="88.027222" />
+      <g
+         id="g19">
+        <g
+           id="g18"
+           transform="translate(-0.23698044,0.47625771)">
+          <circle
+             style="fill:#2ad4ff;fill-opacity:1;stroke:#00aad4;stroke-width:0.614;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="path15"
+             cx="111.71058"
+             cy="87.550964"
+             r="1.4430938" />
+          <circle
+             style="fill:#2ad4ff;fill-opacity:1;stroke:#00aad4;stroke-width:0.614;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="circle15"
+             cx="145.24536"
+             cy="87.000961"
+             r="1.4430938" />
+        </g>
+        <g
+           id="g17"
+           transform="translate(0.23698807,0.47625771)">
+          <circle
+             style="fill:#2ad4ff;fill-opacity:1;stroke:#00aad4;stroke-width:0.614;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="circle16"
+             cx="111.23661"
+             cy="121.00972"
+             r="1.4430938" />
+          <circle
+             style="fill:#2ad4ff;fill-opacity:1;stroke:#00aad4;stroke-width:0.614;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="circle17"
+             cx="144.77139"
+             cy="120.45972"
+             r="1.4430938" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
